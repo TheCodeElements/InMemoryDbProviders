@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/activity_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/design_default_color_primary_dark"
+    android:orientation="vertical"
+    tools:context="de.codeelements.inmemorydbprovider.MainActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        >
+
+        <Button
+            android:id="@+id/btnShowValues"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Show Data"/>
+
+        <Button
+            android:id="@+id/btnShowDebug"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Show Debug"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        >
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:text="Name:"
+            />
+        <EditText
+            android:id="@+id/var_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="test"
+            android:layout_marginStart="5dp"
+            android:maxLines="1"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:ems="10"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        >
+
+        <TextView
+            android:layout_height="40dp"
+            android:layout_width="60dp"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:text="Wert:"
+            />
+        <EditText
+            android:id="@+id/var_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="wert"
+            android:layout_marginStart="5dp"
+            android:maxLines="1"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:ems="10"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAddToValues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="Add"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            >
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:textSize="20sp"
+                android:text="Name:"
+                />
+            <EditText
+                android:id="@+id/debug_var_key"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="test"
+                android:layout_marginStart="5dp"
+                android:maxLines="1"
+                android:inputType="text"
+                android:imeOptions="actionNext"
+                android:ems="10"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            >
+
+            <TextView
+                android:layout_height="40dp"
+                android:layout_width="60dp"
+                android:gravity="center_vertical"
+                android:textSize="20sp"
+                android:text="Wert:"
+                />
+            <EditText
+                android:id="@+id/debug_var_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="wert"
+                android:layout_marginStart="5dp"
+                android:maxLines="1"
+                android:inputType="text"
+                android:imeOptions="actionNext"
+                android:ems="10"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnAddToDebug"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="Add"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
